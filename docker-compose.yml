@@ -1,7 +1,7 @@
 version: "3"
 services:
   hello-world:
-    build: backend
+    build: .
     container_name: hello-world
     ports:
       - "8080:8080"
