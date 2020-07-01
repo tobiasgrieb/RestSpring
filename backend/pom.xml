@@ -15,7 +15,7 @@
 	<description>Hello-World-Service</description>
 
 	<properties>
-		<java.version>11 </java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -49,8 +49,6 @@
 				<executions>
 					<execution>
 						<configuration>
-							<source>11</source>
-							<target>11</target>
 							<mainClass>com.example.restservice.RestServiceApplication</mainClass>
 						</configuration>
 					</execution>
