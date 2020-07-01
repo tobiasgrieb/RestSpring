@@ -1,0 +1,7 @@
+version: "3"
+services:
+  hello-world:
+    build: backend
+    container_name: hello-world
+    ports:
+      - "8080:8080"
