@@ -34,4 +34,4 @@ jobs:
       - name: Build with maven
         run: |
           cd backend
-          mvn clean package spring-boot:repackage
+          mvn -B package --file pom.xml
