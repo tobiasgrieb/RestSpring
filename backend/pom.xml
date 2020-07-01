@@ -15,7 +15,7 @@
 	<description>Hello-World-Service</description>
 
 	<properties>
-		<java.version>14</java.version>
+		<java.version>9</java.version>
 	</properties>
 
 	<dependencies>
