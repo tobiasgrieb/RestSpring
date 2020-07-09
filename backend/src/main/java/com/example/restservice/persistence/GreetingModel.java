@@ -1,10 +1,10 @@
-package com.example.restservice;
+package com.example.restservice.persistence;
 
-public class Greeting {
+public class GreetingModel {
     private final long id;
     private final String content;
 
-    public Greeting(long id, String content) {
+    public GreetingModel(long id, String content) {
         this.id = id;
         this.content = content;
     }

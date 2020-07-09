@@ -1,5 +1,6 @@
-package com.example.restservice;
+package com.example.restservice.api;
 
+import com.example.restservice.persistence.GreetingModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,11 +14,11 @@ public class GreetingController {
 
     @GetMapping
     public String greeting() {
-        return "Hello World";
+        return "Hello and welcome to the bookstore application!";
     }
 
     @GetMapping("api/hello")
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new Greeting(counter.incrementAndGet(), String.format(template, name));
+    public GreetingModel greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+        return new GreetingModel(counter.incrementAndGet(), String.format(template, name));
     }
 }
